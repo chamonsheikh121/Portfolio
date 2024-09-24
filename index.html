@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+  <script>
+
+    // setTimeout(() => {
+    //   document.getElementById('welcome').style.display = "none"
+    //   document.getElementById("root").style.display = 'block'
+    // }, 5000);
+  </script>
+  <style>
+    #welcome {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      font-size: 2em;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div id="welcome">Welcome to My Website!</div> -->
+  <div id="root" style=""></div>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
