@@ -39,9 +39,9 @@ const Header = () => {
     }, [text, isDeleting, index, charIndex, texts]);
 
     return (
-        <div className='flex flex-col-reverse md:flex-row mt-10 justify-between items-center'>
-            <div className='p-10 space-y-5'>
-                <h1 className='text-2xl'>Hello, Welcome</h1>
+        <div className='mb-20  flex flex-col-reverse md:flex-row mt-10 justify-between items-center'>
+            <div className=' space-y-5'>
+                <h1 className='text-2xl'>Hey, Welcome</h1>
                 <div className=''>
                     <h4>Myself</h4>
                     <h2 className='text-3xl'>
@@ -50,6 +50,7 @@ const Header = () => {
                 </div>
                 <div className='typewriter-container h-[50px] '>
                     <div className='typewriter'>
+                        <p>I'm </p>
                         <h1 className='font-bold uppercase text-2xl md:text-4xl'>{text}</h1>
                     </div>
                 </div>

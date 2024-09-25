@@ -1,21 +1,15 @@
-import { useLocation } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import './index.css'
 import Navbar from './Navbar';
 import { useState } from 'react';
 import Header from './Header';
+import Projects from './Projects';
 
 const MainPage = () => {
 
 
 
     const navItems = <>
-        <li className='font-bold uppercase'><a href="sdc" id="link">Home</a></li>
-        <li className='font-bold uppercase'><a href="" id="link">About</a></li>
-        <li className='font-bold uppercase'><a href="" id="link">Project</a></li>
-        <li className='font-bold uppercase'><a href="" id="link">about</a></li>
-        <li className='font-bold uppercase'><a href="" id="link">about</a></li>
-        <li className='font-bold uppercase'><a href="" id="link">download</a></li>
-    </> const navItems = <>
         <li className='font-bold uppercase'><a href="sdc" id="link">Home</a></li>
         <li className='font-bold uppercase'><a href="" id="link">About</a></li>
         <li className='font-bold uppercase'><a href="" id="link">Project</a></li>
@@ -47,7 +41,7 @@ const MainPage = () => {
                             </label>
                         </div>
                         <div className="mx-2 flex-1 px-2">
-                        <img src="" className="h-[60px] w-[200px]" alt="" />
+                            <img src="" className="h-[60px] w-[200px]" alt="" />
                         </div>
                         <div className="hidden flex-none lg:block">
                             <ul className="menu menu-horizontal">
@@ -57,7 +51,7 @@ const MainPage = () => {
                         </div>
                     </div>
                     {/* Page content here */}
-                    <Header></Header>
+                    <Outlet></Outlet>
                 </div>
                 <div className={`drawer-side `}>
                     <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
